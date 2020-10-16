@@ -183,13 +183,19 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/image_dialog_icon"
+<!--                        <ImageView-->
+<!--                            android:id="@+id/image_dialog_icon"-->
+<!--                            android:layout_width="45dp"-->
+<!--                            android:layout_height="45dp"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:scaleType="centerInside"-->
+<!--                            android:background="#007766"/>-->
+
+                        <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:layout_centerInParent="true"
-                            android:scaleType="centerInside"
-                            android:background="#007766"/>
+                            android:src="@drawable/btc1"
+                            />
 
 
                     </RelativeLayout>
@@ -244,7 +250,7 @@
                         android:gravity="center"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="R$60.927,21" />
+                        android:text="R$60.9" />
 
                     <TextView
                         android:id="@+id/text_unread_counter"
@@ -258,8 +264,8 @@
                         android:gravity="center"
                         android:paddingLeft="4dp"
                         android:paddingRight="4dp"
-                        android:textColor="#008000"
-                        android:text="+2,69%"
+                        android:textColor="@color/grey"
+                        android:text="0.0000353"
                         android:textSize="14sp"/>
 
                 </RelativeLayout>
@@ -308,24 +314,11 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/image_dialog_icon2"
+                        <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:layout_centerInParent="true"
-                            android:scaleType="centerInside"
-                            android:background="#007766"/>
-
-                        <TextView
-                            android:id="@+id/text_dialog_avatar_title2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:paddingBottom="2dp"
-                            android:textColor="#fff"
-                            android:textSize="17sp"
-                            android:textStyle="normal"
-                            android:text="E" />
+                            android:src="@drawable/btc2"
+                            />
                     </RelativeLayout>
 
                     <TextView
@@ -339,7 +332,7 @@
                         android:singleLine="true"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="BitCoin" />
+                        android:text="Ethereum" />
 
                     <TextView
                         android:id="@+id/text_dialog_last_message2"
@@ -354,7 +347,7 @@
                         android:singleLine="true"
                         android:textColor="#000"
                         android:textSize="14sp"
-                        android:text="BTC" />
+                        android:text="ETH" />
 
                     <ImageView
                         android:id="@+id/graph2"
@@ -378,7 +371,7 @@
                         android:gravity="center"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="R$60.927,21" />
+                        android:text="R$45.92" />
 
                     <TextView
                         android:id="@+id/text_unread_counter2"
@@ -392,8 +385,8 @@
                         android:gravity="center"
                         android:paddingLeft="4dp"
                         android:paddingRight="4dp"
-                        android:textColor="#008000"
-                        android:text="+2,69%"
+                        android:textColor="@color/grey"
+                        android:text="0.00023453"
                         android:textSize="14sp"/>
 
                 </RelativeLayout>
@@ -442,24 +435,11 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/image_dialog_icon3"
+                        <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:layout_centerInParent="true"
-                            android:scaleType="centerInside"
-                            android:background="#007766"/>
-
-                        <TextView
-                            android:id="@+id/text_dialog_avatar_title3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:paddingBottom="2dp"
-                            android:textColor="#fff"
-                            android:textSize="17sp"
-                            android:textStyle="normal"
-                            android:text="E" />
+                            android:src="@drawable/btc3"
+                            />
                     </RelativeLayout>
 
                     <TextView
@@ -473,7 +453,7 @@
                         android:singleLine="true"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="BitCoin" />
+                        android:text="USD Coin" />
 
                     <TextView
                         android:id="@+id/text_dialog_last_message3"
@@ -488,7 +468,7 @@
                         android:singleLine="true"
                         android:textColor="#000"
                         android:textSize="14sp"
-                        android:text="BTC" />
+                        android:text="USDC" />
 
                     <ImageView
                         android:id="@+id/graph3"
@@ -512,7 +492,7 @@
                         android:gravity="center"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="R$60.927,21" />
+                        android:text="R$21.00" />
 
                     <TextView
                         android:id="@+id/text_unread_counter3"
@@ -526,8 +506,8 @@
                         android:gravity="center"
                         android:paddingLeft="4dp"
                         android:paddingRight="4dp"
-                        android:textColor="#008000"
-                        android:text="+2,69%"
+                        android:textColor="@color/grey"
+                        android:text="0.0045354"
                         android:textSize="14sp"/>
 
                 </RelativeLayout>
@@ -576,24 +556,11 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/image_dialog_icon4"
+                        <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:layout_centerInParent="true"
-                            android:scaleType="centerInside"
-                            android:background="#007766"/>
-
-                        <TextView
-                            android:id="@+id/text_dialog_avatar_title4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:paddingBottom="2dp"
-                            android:textColor="#fff"
-                            android:textSize="17sp"
-                            android:textStyle="normal"
-                            android:text="E" />
+                            android:src="@drawable/btc4"
+                            />
                     </RelativeLayout>
 
                     <TextView
@@ -607,7 +574,7 @@
                         android:singleLine="true"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="BitCoin" />
+                        android:text="LiteCoin" />
 
                     <TextView
                         android:id="@+id/text_dialog_last_message4"
@@ -622,7 +589,7 @@
                         android:singleLine="true"
                         android:textColor="#000"
                         android:textSize="14sp"
-                        android:text="BTC" />
+                        android:text="LTC" />
 
                     <ImageView
                         android:id="@+id/graph4"
@@ -646,7 +613,7 @@
                         android:gravity="center"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="R$60.927,21" />
+                        android:text="R$10.10" />
 
                     <TextView
                         android:id="@+id/text_unread_counter4"
@@ -660,8 +627,8 @@
                         android:gravity="center"
                         android:paddingLeft="4dp"
                         android:paddingRight="4dp"
-                        android:textColor="#008000"
-                        android:text="+2,69%"
+                        android:textColor="@color/grey"
+                        android:text="0.000000353"
                         android:textSize="14sp"/>
 
                 </RelativeLayout>
@@ -710,24 +677,11 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/image_dialog_icon5"
+                        <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="45dp"
                             android:layout_height="45dp"
-                            android:layout_centerInParent="true"
-                            android:scaleType="centerInside"
-                            android:background="#007766"/>
-
-                        <TextView
-                            android:id="@+id/text_dialog_avatar_title5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:paddingBottom="2dp"
-                            android:textColor="#fff"
-                            android:textSize="17sp"
-                            android:textStyle="normal"
-                            android:text="E" />
+                            android:src="@drawable/btc5"
+                            />
                     </RelativeLayout>
 
                     <TextView
@@ -741,7 +695,7 @@
                         android:singleLine="true"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="BitCoin" />
+                        android:text="Basic" />
 
                     <TextView
                         android:id="@+id/text_dialog_last_message5"
@@ -756,7 +710,7 @@
                         android:singleLine="true"
                         android:textColor="#000"
                         android:textSize="14sp"
-                        android:text="BTC" />
+                        android:text="BAT" />
 
                     <ImageView
                         android:id="@+id/graph5"
@@ -780,7 +734,7 @@
                         android:gravity="center"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:text="R$60.927,21" />
+                        android:text="R$60.21" />
 
                     <TextView
                         android:id="@+id/text_unread_counter5"
@@ -794,8 +748,8 @@
                         android:gravity="center"
                         android:paddingLeft="4dp"
                         android:paddingRight="4dp"
-                        android:textColor="#008000"
-                        android:text="+2,69%"
+                        android:textColor="@color/grey"
+                        android:text="0.000037853"
                         android:textSize="14sp"/>
 
                 </RelativeLayout>

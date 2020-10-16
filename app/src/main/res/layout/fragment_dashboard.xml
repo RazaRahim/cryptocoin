@@ -14,9 +14,8 @@ tools:context=".dashboard"
         android:layout_height="wrap_content"
         android:text="Favoutite"
         android:layout_marginTop="11dp"
-
         android:layout_marginLeft="27dp"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#000" />
 
@@ -57,24 +56,10 @@ tools:context=".dashboard"
         android:layout_marginBottom="10dp"
         android:gravity="center">
 
-        <ImageView
-            android:id="@+id/image_dialog_icon"
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_centerInParent="true"
-            android:scaleType="centerInside"
-            android:background="#007766"/>
-
-        <TextView
-            android:id="@+id/text_dialog_avatar_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:paddingBottom="2dp"
-            android:textColor="#fff"
-            android:textSize="17sp"
-            android:textStyle="normal"
-            android:text="$"
+            android:src="@drawable/btc1"
             />
     </RelativeLayout>
 
@@ -108,13 +93,13 @@ tools:context=".dashboard"
 
     <ImageView
         android:id="@+id/graph"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:layout_toLeftOf="@+id/text_last_msg_time"
         android:gravity="center"
-        android:src="@drawable/ic_pie_graph" />
+        android:src="@drawable/g1" />
 
     <TextView
         android:id="@+id/text_last_msg_time"
@@ -192,24 +177,11 @@ tools:context=".dashboard"
             android:gravity="center"
             tools:ignore="DuplicateIds">
 
-            <ImageView
-                android:id="@+id/image_dialog_icon"
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_centerInParent="true"
-                android:scaleType="centerInside"
-                android:background="#007766"/>
-
-            <TextView
-                android:id="@+id/text_dialog_avatar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:paddingBottom="2dp"
-                android:textColor="#fff"
-                android:textSize="17sp"
-                android:textStyle="normal"
-                android:text="E" />
+                android:src="@drawable/btc2"
+                />
         </RelativeLayout>
 
         <TextView
@@ -244,13 +216,13 @@ tools:context=".dashboard"
 
         <ImageView
             android:id="@+id/graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:layout_toLeftOf="@+id/text_last_msg_time"
             android:gravity="center"
-            android:src="@drawable/ic_pie_graph"
+            android:src="@drawable/g2"
             tools:ignore="DuplicateIds" />
 
         <TextView
@@ -333,24 +305,11 @@ tools:context=".dashboard"
             android:gravity="center"
             tools:ignore="DuplicateIds">
 
-            <ImageView
-                android:id="@+id/image_dialog_icon"
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_centerInParent="true"
-                android:scaleType="centerInside"
-                android:background="#007766"/>
-
-            <TextView
-                android:id="@+id/text_dialog_avatar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:paddingBottom="2dp"
-                android:textColor="#fff"
-                android:textSize="17sp"
-                android:textStyle="normal"
-                android:text="E" />
+                android:src="@drawable/btc3"
+                />
         </RelativeLayout>
 
         <TextView
@@ -385,13 +344,13 @@ tools:context=".dashboard"
 
         <ImageView
             android:id="@+id/graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:layout_toLeftOf="@+id/text_last_msg_time"
             android:gravity="center"
-            android:src="@drawable/ic_pie_graph"
+            android:src="@drawable/g3"
             tools:ignore="DuplicateIds" />
 
         <TextView
@@ -473,25 +432,11 @@ tools:context=".dashboard"
             android:gravity="center"
             tools:ignore="DuplicateIds">
 
-            <ImageView
-                android:id="@+id/image_dialog_icon"
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_centerInParent="true"
-                android:scaleType="centerInside"
-                android:background="#007766"
-                tools:ignore="DuplicateIds" />
-
-            <TextView
-                android:id="@+id/text_dialog_avatar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:paddingBottom="2dp"
-                android:textColor="#fff"
-                android:textSize="17sp"
-                android:textStyle="normal"
-                android:text="E" />
+                android:src="@drawable/btc4"
+                />
         </RelativeLayout>
 
         <TextView
@@ -526,13 +471,13 @@ tools:context=".dashboard"
 
         <ImageView
             android:id="@+id/graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:layout_toLeftOf="@+id/text_last_msg_time"
             android:gravity="center"
-            android:src="@drawable/ic_pie_graph"
+            android:src="@drawable/g4"
             tools:ignore="DuplicateIds" />
 
         <TextView
@@ -615,24 +560,11 @@ tools:context=".dashboard"
             android:gravity="center"
             tools:ignore="DuplicateIds">
 
-            <ImageView
-                android:id="@+id/image_dialog_icon"
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_centerInParent="true"
-                android:scaleType="centerInside"
-                android:background="#007766"/>
-
-            <TextView
-                android:id="@+id/text_dialog_avatar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:paddingBottom="2dp"
-                android:textColor="#fff"
-                android:textSize="17sp"
-                android:textStyle="normal"
-                android:text="E" />
+                android:src="@drawable/btc5"
+                />
         </RelativeLayout>
 
         <TextView
@@ -667,13 +599,13 @@ tools:context=".dashboard"
 
         <ImageView
             android:id="@+id/graph"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:layout_toLeftOf="@+id/text_last_msg_time"
             android:gravity="center"
-            android:src="@drawable/ic_pie_graph"
+            android:src="@drawable/g5"
             tools:ignore="DuplicateIds" />
 
         <TextView

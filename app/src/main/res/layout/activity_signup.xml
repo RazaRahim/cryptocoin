@@ -11,8 +11,7 @@
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
         android:src="@drawable/cross"
         android:id="@+id/cross"
         />
@@ -21,7 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create Your Account"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold"
@@ -31,16 +32,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="First Name"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:textColor="@color/black"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:textSize="15dp"
         />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="15dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:hint="First Name"
         android:textColorHint="@color/grey"
@@ -55,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Last Name"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:textColor="@color/black"
         android:layout_marginTop="10dp"
@@ -63,8 +64,8 @@
         />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="15dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:hint="Last Name"
         android:textColorHint="@color/grey"
@@ -79,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:textColor="@color/black"
         android:layout_marginTop="10dp"
@@ -87,8 +88,8 @@
         />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="15dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:hint="Email address"
         android:textColorHint="@color/grey"
@@ -103,7 +104,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Password"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:textColor="@color/black"
         android:layout_marginTop="10dp"
@@ -112,8 +113,8 @@
     <EditText
         android:layout_width="match_parent"
         android:id="@+id/pass"
-        android:layout_height="35dp"
-        android:layout_marginLeft="15dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="15dp"
         android:hint="Minimum 8 characters"
         android:textColorHint="@color/grey"
@@ -136,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:checked="true"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="20dp"
             />
 
         <TextView
@@ -170,21 +171,21 @@
         <!--        android:background="@drawable/edtback"-->
         <!--        />-->
 
-        <com.kusu.loadingbutton.LoadingButton
+        <Button
             android:id="@+id/btn"
             android:layout_width="match_parent"
-            android:layout_weight="0"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_centerHorizontal="true"
             android:text="Start"
             android:layout_gravity="bottom"
-            android:textColor="@color/white"
-            app:lb_buttonColor="@color/btn"
-            app:lb_loaderColor="@color/btn"
-            app:lb_shadowColor="@color/btn"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/btn"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:paddingBottom="5dp"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
             />
 
     </LinearLayout>

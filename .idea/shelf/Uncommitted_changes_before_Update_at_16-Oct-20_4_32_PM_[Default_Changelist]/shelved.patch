@@ -1,0 +1,904 @@
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<resources>\r\n    <color name=\"colorPrimary\">#1652F0</color>\r\n    <color name=\"colorPrimaryDark\">#1652F0</color>\r\n    <color name=\"colorAccent\">#1652F0</color>\r\n\r\n\r\n    <color name=\"black\">#FF000000</color>\r\n    <color name=\"grey\">#7C7C7C</color>\r\n    <color name=\"btn\">#9CA1AA</color>\r\n    <color name=\"white\">#FFFFFFFF</color>\r\n    <color name=\"blue\">#1652F0</color>\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/colors.xml	(revision 1769beaf12fa2d6d517be34ad5b45cb718d8f2fb)
++++ app/src/main/res/values/colors.xml	(date 1602846518007)
+@@ -10,5 +10,6 @@
+     <color name="btn">#9CA1AA</color>
+     <color name="white">#FFFFFFFF</color>
+     <color name="blue">#1652F0</color>
++    <color name="light_blue">#7593E3</color>
+ 
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <FrameLayout\r\n        android:id=\"@+id/fragment_container\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_above=\"@+id/bottom_navigation\" />\r\n    <com.google.android.material.bottomnavigation.BottomNavigationView\r\n        android:background=\"#fff\"\r\n        android:id=\"@+id/bottom_navigation\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_alignParentBottom=\"true\"\r\n        app:itemBackground=\"@color/white\"\r\n        app:itemIconTint=\"@color/blue\"\r\n        app:itemTextColor=\"@color/blue\"\r\n        app:menu=\"@menu/bottom_navigation\">\r\n\r\n        <com.google.android.material.floatingactionbutton.FloatingActionButton\r\n            android:id=\"@+id/floatbtn\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_gravity=\"bottom|center\"\r\n            android:layout_margin=\"1dp\"\r\n            app:layout_anchor=\"@id/fragment_container\"\r\n            android:src=\"@drawable/arros\"\r\n            app:layout_anchorGravity=\"bottom|right\"\r\n            android:backgroundTint=\"#0D5BE1\" />\r\n\r\n    </com.google.android.material.bottomnavigation.BottomNavigationView>\r\n\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(revision 1769beaf12fa2d6d517be34ad5b45cb718d8f2fb)
++++ app/src/main/res/layout/activity_main.xml	(date 1602845647381)
+@@ -4,6 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
++    android:background="@color/white"
+     tools:context=".MainActivity">
+ 
+     <FrameLayout
+@@ -11,6 +12,7 @@
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/bottom_navigation" />
++
+     <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:background="#fff"
+         android:id="@+id/bottom_navigation"
+Index: app/src/main/res/layout/fragment_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".home\"\r\n    >\r\n\r\n    <!-- TODO: Update blank fragment layout -->\r\n\r\n\r\n</FrameLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_home.xml	(revision 1769beaf12fa2d6d517be34ad5b45cb718d8f2fb)
++++ app/src/main/res/layout/fragment_home.xml	(date 1602847925402)
+@@ -3,10 +3,814 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    tools:context=".home"
+-    >
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    android:background="@color/white"
++    tools:context=".home">
++
++    <FrameLayout
++        android:layout_width="match_parent"
++        android:layout_height="300dp"
++        android:background="@color/blue"
++        />
++
++    <ScrollView
++        android:layout_width="match_parent"
++        android:fillViewport="true"
++        android:layout_height="match_parent">
++
++
++    <RelativeLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent">
++
++
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="$28.98"
++            android:textColor="@color/white"
++            android:textAlignment="center"
++            android:textSize="28dp"
++            android:layout_centerHorizontal="true"
++            android:layout_marginTop="25dp"
++            android:textStyle="bold"
++            android:id="@+id/txt1"
++            />
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:weightSum="5"
++            android:id="@+id/btns"
++            android:gravity="center"
++            android:layout_marginTop="15dp"
++            android:orientation="horizontal"
++            android:layout_below="@+id/txt1">
++
++            <LinearLayout
++                android:layout_width="0dp"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:layout_gravity="center"
++                android:gravity="center"
++                android:orientation="horizontal"
++                android:layout_below="@+id/txt1">
++
++                <Button
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:background="@android:color/transparent"
++                    android:text="Send"
++                    android:textColor="@color/white"
++                    />
++
++            </LinearLayout>
++            <LinearLayout
++                android:layout_width="0dp"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:layout_gravity="center"
++                android:gravity="center"
++                android:orientation="horizontal"
++                android:layout_below="@+id/txt1">
++
++                <View
++                    android:layout_width="2dp"
++                    android:background="@color/light_blue"
++                    android:layout_height="match_parent"
++                    />
++
++                <Button
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:background="@android:color/transparent"
++                    android:text="Receive"
++                    android:textColor="@color/white"
++                    />
++
++            </LinearLayout>
++            <LinearLayout
++                android:layout_width="0dp"
++                android:layout_height="match_parent"
++                android:layout_weight="1"
++                android:layout_gravity="center"
++                android:gravity="center"
++                android:orientation="horizontal"
++                android:layout_below="@+id/txt1">
++
++                <View
++                    android:layout_width="2dp"
++                    android:background="@color/light_blue"
++                    android:layout_height="match_parent"
++                    />
++
++                <ImageView
++                    android:layout_width="30dp"
++                    android:layout_height="30dp"
++                    android:src="@drawable/qrcode"
++                    android:layout_marginLeft="15dp"
++                    />
++
++            </LinearLayout>
++
++        </LinearLayout>
++
++        <androidx.cardview.widget.CardView
++            android:layout_width="match_parent"
++            android:layout_below="@+id/btns"
++            android:layout_marginLeft="15dp"
++            android:layout_marginRight="15dp"
++            android:layout_marginTop="35dp"
++            app:cardCornerRadius="15dp"
++            android:layout_marginBottom="-10dp"
++            android:layout_height="match_parent">
++
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:orientation="vertical"
++                android:layout_height="match_parent">
++
++                <TextView
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Coins"
++                    android:textColor="@color/blue"
++                    android:textSize="28dp"
++                    android:layout_gravity="center"
++                    android:layout_marginTop="15dp"
++                    android:layout_centerHorizontal="true"
++                    android:textStyle="bold"
++                    android:id="@+id/txt2"
++                    />
++
++                <RelativeLayout
++                    android:gravity="center_vertical"
++                    android:paddingTop="5dp"
++                    android:paddingBottom="5dp"
++                    android:paddingLeft="15dp"
++                    android:paddingRight="15dp"
++                    android:layout_marginTop="10dp"
++                    android:layout_below="@+id/txt2"
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    >
++
++                    <!--    <CheckBox-->
++                    <!--        android:id="@+id/checkbox_dialogs"-->
++                    <!--        android:layout_width="wrap_content"-->
++                    <!--        android:layout_height="wrap_content"-->
++                    <!--        android:layout_alignParentRight="true"-->
++                    <!--        android:visibility="visible"-->
++                    <!--        android:clickable="false"-->
++                    <!--        android:focusable="false"-->
++                    <!--        android:focusableInTouchMode="false"-->
++                    <!--        android:layout_centerInParent="true"-->
++                    <!--        android:layout_marginRight="12dp"-->
++                    <!--        tools:checked="true" />-->
++
++                    <RelativeLayout
++                        android:id="@+id/container_avatar"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentLeft="true"
++                        android:layout_alignParentTop="true"
++                        android:layout_centerVertical="true"
++                        android:layout_gravity="center_vertical"
++                        android:layout_marginLeft="17dp"
++                        android:layout_marginTop="10dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_marginBottom="10dp"
++                        android:gravity="center">
++
++                        <ImageView
++                            android:id="@+id/image_dialog_icon"
++                            android:layout_width="45dp"
++                            android:layout_height="45dp"
++                            android:layout_centerInParent="true"
++                            android:scaleType="centerInside"
++                            android:background="#007766"/>
++
++
++                    </RelativeLayout>
++
++                    <TextView
++                        android:id="@+id/text_dialog_name"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_toRightOf="@+id/container_avatar"
++                        android:ellipsize="end"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="BitCoin" />
++
++                    <TextView
++                        android:id="@+id/text_dialog_last_message"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@+id/text_dialog_name"
++                        android:layout_marginTop="3dp"
++                        android:layout_marginRight="6dp"
++                        android:layout_toRightOf="@+id/container_avatar"
++                        android:ellipsize="end"
++                        android:paddingBottom="2dp"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="14sp"
++                        android:text="BTC" />
++
++                    <ImageView
++                        android:id="@+id/graph"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginRight="40dp"
++                        android:layout_marginTop="20dp"
++                        android:layout_toLeftOf="@+id/text_last_msg_time"
++                        android:gravity="center"
++                        android:src="@drawable/ic_pie_graph" />
++
++                    <TextView
++                        android:id="@+id/text_last_msg_time"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentTop="true"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="15dp"
++                        android:gravity="center"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="R$60.927,21" />
++
++                    <TextView
++                        android:id="@+id/text_unread_counter"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@id/text_last_msg_time"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="6dp"
++                        android:layout_marginRight="11dp"
++                        android:layout_marginBottom="6dp"
++                        android:gravity="center"
++                        android:paddingLeft="4dp"
++                        android:paddingRight="4dp"
++                        android:textColor="#008000"
++                        android:text="+2,69%"
++                        android:textSize="14sp"/>
++
++                </RelativeLayout>
++
++                <View
++                    android:layout_margin="3dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="1dp"
++                    android:background="#C0C0C0"
++                    />
++
++                <RelativeLayout
++                    android:gravity="center_vertical"
++                    android:paddingTop="5dp"
++                    android:paddingBottom="5dp"
++                    android:paddingLeft="15dp"
++                    android:paddingRight="15dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    >
+ 
+-    <!-- TODO: Update blank fragment layout -->
++                    <!--    <CheckBox-->
++                    <!--        android:id="@+id/checkbox_dialogs"-->
++                    <!--        android:layout_width="wrap_content"-->
++                    <!--        android:layout_height="wrap_content"-->
++                    <!--        android:layout_alignParentRight="true"-->
++                    <!--        android:visibility="visible"-->
++                    <!--        android:clickable="false"-->
++                    <!--        android:focusable="false"-->
++                    <!--        android:focusableInTouchMode="false"-->
++                    <!--        android:layout_centerInParent="true"-->
++                    <!--        android:layout_marginRight="12dp"-->
++                    <!--        tools:checked="true" />-->
++
++                    <RelativeLayout
++                        android:id="@+id/container_avatar2"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentLeft="true"
++                        android:layout_alignParentTop="true"
++                        android:layout_centerVertical="true"
++                        android:layout_gravity="center_vertical"
++                        android:layout_marginLeft="17dp"
++                        android:layout_marginTop="10dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_marginBottom="10dp"
++                        android:gravity="center">
++
++                        <ImageView
++                            android:id="@+id/image_dialog_icon2"
++                            android:layout_width="45dp"
++                            android:layout_height="45dp"
++                            android:layout_centerInParent="true"
++                            android:scaleType="centerInside"
++                            android:background="#007766"/>
++
++                        <TextView
++                            android:id="@+id/text_dialog_avatar_title2"
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:layout_centerInParent="true"
++                            android:paddingBottom="2dp"
++                            android:textColor="#fff"
++                            android:textSize="17sp"
++                            android:textStyle="normal"
++                            android:text="E" />
++                    </RelativeLayout>
++
++                    <TextView
++                        android:id="@+id/text_dialog_name2"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_toRightOf="@+id/container_avatar2"
++                        android:ellipsize="end"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="BitCoin" />
++
++                    <TextView
++                        android:id="@+id/text_dialog_last_message2"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@+id/text_dialog_name2"
++                        android:layout_marginTop="3dp"
++                        android:layout_marginRight="6dp"
++                        android:layout_toRightOf="@+id/container_avatar2"
++                        android:ellipsize="end"
++                        android:paddingBottom="2dp"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="14sp"
++                        android:text="BTC" />
++
++                    <ImageView
++                        android:id="@+id/graph2"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginRight="40dp"
++                        android:layout_marginTop="20dp"
++                        android:layout_toLeftOf="@+id/text_last_msg_time2"
++                        android:gravity="center"
++                        android:src="@drawable/ic_pie_graph" />
++
++                    <TextView
++                        android:id="@+id/text_last_msg_time2"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentTop="true"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="15dp"
++                        android:gravity="center"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="R$60.927,21" />
++
++                    <TextView
++                        android:id="@+id/text_unread_counter2"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@id/text_last_msg_time2"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="6dp"
++                        android:layout_marginRight="11dp"
++                        android:layout_marginBottom="6dp"
++                        android:gravity="center"
++                        android:paddingLeft="4dp"
++                        android:paddingRight="4dp"
++                        android:textColor="#008000"
++                        android:text="+2,69%"
++                        android:textSize="14sp"/>
++
++                </RelativeLayout>
++
++                <View
++                    android:layout_margin="3dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="1dp"
++                    android:background="#C0C0C0"
++                    />
++
++                <RelativeLayout
++                    android:gravity="center_vertical"
++                    android:paddingTop="5dp"
++                    android:paddingBottom="5dp"
++                    android:paddingLeft="15dp"
++                    android:paddingRight="15dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    >
++
++                    <!--    <CheckBox-->
++                    <!--        android:id="@+id/checkbox_dialogs"-->
++                    <!--        android:layout_width="wrap_content"-->
++                    <!--        android:layout_height="wrap_content"-->
++                    <!--        android:layout_alignParentRight="true"-->
++                    <!--        android:visibility="visible"-->
++                    <!--        android:clickable="false"-->
++                    <!--        android:focusable="false"-->
++                    <!--        android:focusableInTouchMode="false"-->
++                    <!--        android:layout_centerInParent="true"-->
++                    <!--        android:layout_marginRight="12dp"-->
++                    <!--        tools:checked="true" />-->
++
++                    <RelativeLayout
++                        android:id="@+id/container_avatar3"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentLeft="true"
++                        android:layout_alignParentTop="true"
++                        android:layout_centerVertical="true"
++                        android:layout_gravity="center_vertical"
++                        android:layout_marginLeft="17dp"
++                        android:layout_marginTop="10dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_marginBottom="10dp"
++                        android:gravity="center">
++
++                        <ImageView
++                            android:id="@+id/image_dialog_icon3"
++                            android:layout_width="45dp"
++                            android:layout_height="45dp"
++                            android:layout_centerInParent="true"
++                            android:scaleType="centerInside"
++                            android:background="#007766"/>
++
++                        <TextView
++                            android:id="@+id/text_dialog_avatar_title3"
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:layout_centerInParent="true"
++                            android:paddingBottom="2dp"
++                            android:textColor="#fff"
++                            android:textSize="17sp"
++                            android:textStyle="normal"
++                            android:text="E" />
++                    </RelativeLayout>
++
++                    <TextView
++                        android:id="@+id/text_dialog_name3"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_toRightOf="@+id/container_avatar3"
++                        android:ellipsize="end"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="BitCoin" />
++
++                    <TextView
++                        android:id="@+id/text_dialog_last_message3"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@+id/text_dialog_name3"
++                        android:layout_marginTop="3dp"
++                        android:layout_marginRight="6dp"
++                        android:layout_toRightOf="@+id/container_avatar3"
++                        android:ellipsize="end"
++                        android:paddingBottom="2dp"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="14sp"
++                        android:text="BTC" />
++
++                    <ImageView
++                        android:id="@+id/graph3"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginRight="40dp"
++                        android:layout_marginTop="20dp"
++                        android:layout_toLeftOf="@+id/text_last_msg_time3"
++                        android:gravity="center"
++                        android:src="@drawable/ic_pie_graph" />
++
++                    <TextView
++                        android:id="@+id/text_last_msg_time3"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentTop="true"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="15dp"
++                        android:gravity="center"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="R$60.927,21" />
++
++                    <TextView
++                        android:id="@+id/text_unread_counter3"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@id/text_last_msg_time3"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="6dp"
++                        android:layout_marginRight="11dp"
++                        android:layout_marginBottom="6dp"
++                        android:gravity="center"
++                        android:paddingLeft="4dp"
++                        android:paddingRight="4dp"
++                        android:textColor="#008000"
++                        android:text="+2,69%"
++                        android:textSize="14sp"/>
++
++                </RelativeLayout>
++
++                <View
++                    android:layout_margin="3dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="1dp"
++                    android:background="#C0C0C0"
++                    />
++
++                <RelativeLayout
++                    android:gravity="center_vertical"
++                    android:paddingTop="5dp"
++                    android:paddingBottom="5dp"
++                    android:paddingLeft="15dp"
++                    android:paddingRight="15dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    >
++
++                    <!--    <CheckBox-->
++                    <!--        android:id="@+id/checkbox_dialogs"-->
++                    <!--        android:layout_width="wrap_content"-->
++                    <!--        android:layout_height="wrap_content"-->
++                    <!--        android:layout_alignParentRight="true"-->
++                    <!--        android:visibility="visible"-->
++                    <!--        android:clickable="false"-->
++                    <!--        android:focusable="false"-->
++                    <!--        android:focusableInTouchMode="false"-->
++                    <!--        android:layout_centerInParent="true"-->
++                    <!--        android:layout_marginRight="12dp"-->
++                    <!--        tools:checked="true" />-->
++
++                    <RelativeLayout
++                        android:id="@+id/container_avatar4"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentLeft="true"
++                        android:layout_alignParentTop="true"
++                        android:layout_centerVertical="true"
++                        android:layout_gravity="center_vertical"
++                        android:layout_marginLeft="17dp"
++                        android:layout_marginTop="10dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_marginBottom="10dp"
++                        android:gravity="center">
++
++                        <ImageView
++                            android:id="@+id/image_dialog_icon4"
++                            android:layout_width="45dp"
++                            android:layout_height="45dp"
++                            android:layout_centerInParent="true"
++                            android:scaleType="centerInside"
++                            android:background="#007766"/>
++
++                        <TextView
++                            android:id="@+id/text_dialog_avatar_title4"
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:layout_centerInParent="true"
++                            android:paddingBottom="2dp"
++                            android:textColor="#fff"
++                            android:textSize="17sp"
++                            android:textStyle="normal"
++                            android:text="E" />
++                    </RelativeLayout>
++
++                    <TextView
++                        android:id="@+id/text_dialog_name4"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_toRightOf="@+id/container_avatar4"
++                        android:ellipsize="end"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="BitCoin" />
++
++                    <TextView
++                        android:id="@+id/text_dialog_last_message4"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@+id/text_dialog_name4"
++                        android:layout_marginTop="3dp"
++                        android:layout_marginRight="6dp"
++                        android:layout_toRightOf="@+id/container_avatar4"
++                        android:ellipsize="end"
++                        android:paddingBottom="2dp"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="14sp"
++                        android:text="BTC" />
++
++                    <ImageView
++                        android:id="@+id/graph4"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginRight="40dp"
++                        android:layout_marginTop="20dp"
++                        android:layout_toLeftOf="@+id/text_last_msg_time4"
++                        android:gravity="center"
++                        android:src="@drawable/ic_pie_graph" />
++
++                    <TextView
++                        android:id="@+id/text_last_msg_time4"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentTop="true"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="15dp"
++                        android:gravity="center"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="R$60.927,21" />
++
++                    <TextView
++                        android:id="@+id/text_unread_counter4"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@id/text_last_msg_time4"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="6dp"
++                        android:layout_marginRight="11dp"
++                        android:layout_marginBottom="6dp"
++                        android:gravity="center"
++                        android:paddingLeft="4dp"
++                        android:paddingRight="4dp"
++                        android:textColor="#008000"
++                        android:text="+2,69%"
++                        android:textSize="14sp"/>
++
++                </RelativeLayout>
++
++                <View
++                    android:layout_margin="3dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="1dp"
++                    android:background="#C0C0C0"
++                    />
++
++                <RelativeLayout
++                    android:gravity="center_vertical"
++                    android:paddingTop="5dp"
++                    android:paddingBottom="5dp"
++                    android:paddingLeft="15dp"
++                    android:paddingRight="15dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    >
++
++                    <!--    <CheckBox-->
++                    <!--        android:id="@+id/checkbox_dialogs"-->
++                    <!--        android:layout_width="wrap_content"-->
++                    <!--        android:layout_height="wrap_content"-->
++                    <!--        android:layout_alignParentRight="true"-->
++                    <!--        android:visibility="visible"-->
++                    <!--        android:clickable="false"-->
++                    <!--        android:focusable="false"-->
++                    <!--        android:focusableInTouchMode="false"-->
++                    <!--        android:layout_centerInParent="true"-->
++                    <!--        android:layout_marginRight="12dp"-->
++                    <!--        tools:checked="true" />-->
++
++                    <RelativeLayout
++                        android:id="@+id/container_avatar5"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentLeft="true"
++                        android:layout_alignParentTop="true"
++                        android:layout_centerVertical="true"
++                        android:layout_gravity="center_vertical"
++                        android:layout_marginLeft="17dp"
++                        android:layout_marginTop="10dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_marginBottom="10dp"
++                        android:gravity="center">
++
++                        <ImageView
++                            android:id="@+id/image_dialog_icon5"
++                            android:layout_width="45dp"
++                            android:layout_height="45dp"
++                            android:layout_centerInParent="true"
++                            android:scaleType="centerInside"
++                            android:background="#007766"/>
++
++                        <TextView
++                            android:id="@+id/text_dialog_avatar_title5"
++                            android:layout_width="wrap_content"
++                            android:layout_height="wrap_content"
++                            android:layout_centerInParent="true"
++                            android:paddingBottom="2dp"
++                            android:textColor="#fff"
++                            android:textSize="17sp"
++                            android:textStyle="normal"
++                            android:text="E" />
++                    </RelativeLayout>
++
++                    <TextView
++                        android:id="@+id/text_dialog_name5"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="9dp"
++                        android:layout_toRightOf="@+id/container_avatar5"
++                        android:ellipsize="end"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="BitCoin" />
++
++                    <TextView
++                        android:id="@+id/text_dialog_last_message5"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@+id/text_dialog_name5"
++                        android:layout_marginTop="3dp"
++                        android:layout_marginRight="6dp"
++                        android:layout_toRightOf="@+id/container_avatar5"
++                        android:ellipsize="end"
++                        android:paddingBottom="2dp"
++                        android:singleLine="true"
++                        android:textColor="#000"
++                        android:textSize="14sp"
++                        android:text="BTC" />
++
++                    <ImageView
++                        android:id="@+id/graph5"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_marginRight="40dp"
++                        android:layout_marginTop="20dp"
++                        android:layout_toLeftOf="@+id/text_last_msg_time5"
++                        android:gravity="center"
++                        android:src="@drawable/ic_pie_graph" />
++
++                    <TextView
++                        android:id="@+id/text_last_msg_time5"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_alignParentTop="true"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="8dp"
++                        android:layout_marginRight="15dp"
++                        android:gravity="center"
++                        android:textColor="#000"
++                        android:textSize="18sp"
++                        android:text="R$60.927,21" />
++
++                    <TextView
++                        android:id="@+id/text_unread_counter5"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_below="@id/text_last_msg_time5"
++                        android:layout_alignParentRight="true"
++                        android:layout_marginTop="6dp"
++                        android:layout_marginRight="11dp"
++                        android:layout_marginBottom="6dp"
++                        android:gravity="center"
++                        android:paddingLeft="4dp"
++                        android:paddingRight="4dp"
++                        android:textColor="#008000"
++                        android:text="+2,69%"
++                        android:textSize="14sp"/>
++
++                </RelativeLayout>
++
++                <View
++                    android:layout_margin="3dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="1dp"
++                    android:background="#C0C0C0"
++                    />
++
++            </LinearLayout>
++
++        </androidx.cardview.widget.CardView>
++
++
++
++    </RelativeLayout>
++
++    </ScrollView>
+ 
+ 
+ </FrameLayout>
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>apply plugin: 'com.android.application'\r\n\r\nandroid {\r\n    compileSdkVersion 30\r\n    buildToolsVersion \"30.0.0\"\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.cryptocoin\"\r\n        minSdkVersion 21\r\n        targetSdkVersion 30\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n}\r\n\r\ndependencies {\r\n    implementation fileTree(dir: \"libs\", include: [\"*.jar\"])\r\n    implementation 'androidx.appcompat:appcompat:1.2.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'\r\n    testImplementation 'junit:junit:4.12'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.2'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'\r\n    implementation 'com.google.android.material:material:1.2.0-alpha04'\r\n\r\n    implementation 'com.github.koushikcse:LoadingButton:1.7'\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision 1769beaf12fa2d6d517be34ad5b45cb718d8f2fb)
++++ app/build.gradle	(date 1602845694206)
+@@ -32,5 +32,6 @@
+     implementation 'com.google.android.material:material:1.2.0-alpha04'
+ 
+     implementation 'com.github.koushikcse:LoadingButton:1.7'
++    implementation 'de.hdodenhof:circleimageview:3.1.0'
+ 
+ }
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"1.8\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 1769beaf12fa2d6d517be34ad5b45cb718d8f2fb)
++++ .idea/gradle.xml	(date 1602845698393)
+@@ -15,6 +15,7 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>

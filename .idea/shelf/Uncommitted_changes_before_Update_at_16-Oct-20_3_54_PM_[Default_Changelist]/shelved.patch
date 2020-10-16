@@ -1,0 +1,33 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <FrameLayout\r\n        android:id=\"@+id/fragment_container\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_above=\"@+id/bottom_navigation\" />\r\n    <com.google.android.material.bottomnavigation.BottomNavigationView\r\n        android:background=\"#fff\"\r\n        android:id=\"@+id/bottom_navigation\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_alignParentBottom=\"true\"\r\n        app:itemBackground=\"#fff\"\r\n        app:itemIconTint=\"@color/blue\"\r\n        app:itemTextColor=\"@color/blue\"\r\n        app:menu=\"@menu/bottom_navigation\">\r\n\r\n        <com.google.android.material.floatingactionbutton.FloatingActionButton\r\n            android:id=\"@+id/floatbtn\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_gravity=\"bottom|center\"\r\n            android:layout_margin=\"1dp\"\r\n            app:layout_anchor=\"@id/fragment_container\"\r\n            android:src=\"@drawable/arros\"\r\n            app:layout_anchorGravity=\"bottom|right\"\r\n            android:backgroundTint=\"#0D5BE1\" />\r\n\r\n    </com.google.android.material.bottomnavigation.BottomNavigationView>\r\n\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(revision 394c4a5e487ba5c67d8201d3d02d0e57fcdd9a92)
++++ app/src/main/res/layout/activity_main.xml	(date 1602845381443)
+@@ -4,6 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
++    android:background="@color/white"
+     tools:context=".MainActivity">
+ 
+     <FrameLayout
+@@ -11,13 +12,14 @@
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/bottom_navigation" />
++
+     <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:background="#fff"
+         android:id="@+id/bottom_navigation"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+-        app:itemBackground="#fff"
++        app:itemBackground="@color/white"
+         app:itemIconTint="@color/blue"
+         app:itemTextColor="@color/blue"
+         app:menu="@menu/bottom_navigation">

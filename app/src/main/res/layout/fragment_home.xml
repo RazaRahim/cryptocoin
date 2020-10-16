@@ -3,10 +3,819 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".home">
 
-    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/blue"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$28.98"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txt1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:id="@+id/btns"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/txt1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/txt1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Send"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/txt1">
+
+                <View
+                    android:layout_width="2dp"
+                    android:background="@color/light_blue"
+                    android:layout_height="match_parent"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Receive"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/txt1">
+
+                <View
+                    android:layout_width="2dp"
+                    android:background="@color/light_blue"
+                    android:layout_height="match_parent"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/qrcode"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/btns"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coins"
+                    android:textColor="@color/blue"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:id="@+id/txt2"
+                    />
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <!--    <CheckBox-->
+                    <!--        android:id="@+id/checkbox_dialogs"-->
+                    <!--        android:layout_width="wrap_content"-->
+                    <!--        android:layout_height="wrap_content"-->
+                    <!--        android:layout_alignParentRight="true"-->
+                    <!--        android:visibility="visible"-->
+                    <!--        android:clickable="false"-->
+                    <!--        android:focusable="false"-->
+                    <!--        android:focusableInTouchMode="false"-->
+                    <!--        android:layout_centerInParent="true"-->
+                    <!--        android:layout_marginRight="12dp"-->
+                    <!--        tools:checked="true" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/container_avatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/image_dialog_icon"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerInside"
+                            android:background="#007766"/>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_dialog_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_toRightOf="@+id/container_avatar"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="BitCoin" />
+
+                    <TextView
+                        android:id="@+id/text_dialog_last_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_dialog_name"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toRightOf="@+id/container_avatar"
+                        android:ellipsize="end"
+                        android:paddingBottom="2dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:text="BTC" />
+
+                    <ImageView
+                        android:id="@+id/graph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/text_last_msg_time"
+                        android:gravity="center"
+                        android:src="@drawable/ic_pie_graph" />
+
+                    <TextView
+                        android:id="@+id/text_last_msg_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="R$60.927,21" />
+
+                    <TextView
+                        android:id="@+id/text_unread_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_last_msg_time"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="#008000"
+                        android:text="+2,69%"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C0C0C0"
+                    />
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <!--    <CheckBox-->
+                    <!--        android:id="@+id/checkbox_dialogs"-->
+                    <!--        android:layout_width="wrap_content"-->
+                    <!--        android:layout_height="wrap_content"-->
+                    <!--        android:layout_alignParentRight="true"-->
+                    <!--        android:visibility="visible"-->
+                    <!--        android:clickable="false"-->
+                    <!--        android:focusable="false"-->
+                    <!--        android:focusableInTouchMode="false"-->
+                    <!--        android:layout_centerInParent="true"-->
+                    <!--        android:layout_marginRight="12dp"-->
+                    <!--        tools:checked="true" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/container_avatar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/image_dialog_icon2"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerInside"
+                            android:background="#007766"/>
+
+                        <TextView
+                            android:id="@+id/text_dialog_avatar_title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="2dp"
+                            android:textColor="#fff"
+                            android:textSize="17sp"
+                            android:textStyle="normal"
+                            android:text="E" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_dialog_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_toRightOf="@+id/container_avatar2"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="BitCoin" />
+
+                    <TextView
+                        android:id="@+id/text_dialog_last_message2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_dialog_name2"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toRightOf="@+id/container_avatar2"
+                        android:ellipsize="end"
+                        android:paddingBottom="2dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:text="BTC" />
+
+                    <ImageView
+                        android:id="@+id/graph2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/text_last_msg_time2"
+                        android:gravity="center"
+                        android:src="@drawable/ic_pie_graph" />
+
+                    <TextView
+                        android:id="@+id/text_last_msg_time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="R$60.927,21" />
+
+                    <TextView
+                        android:id="@+id/text_unread_counter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_last_msg_time2"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="#008000"
+                        android:text="+2,69%"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C0C0C0"
+                    />
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <!--    <CheckBox-->
+                    <!--        android:id="@+id/checkbox_dialogs"-->
+                    <!--        android:layout_width="wrap_content"-->
+                    <!--        android:layout_height="wrap_content"-->
+                    <!--        android:layout_alignParentRight="true"-->
+                    <!--        android:visibility="visible"-->
+                    <!--        android:clickable="false"-->
+                    <!--        android:focusable="false"-->
+                    <!--        android:focusableInTouchMode="false"-->
+                    <!--        android:layout_centerInParent="true"-->
+                    <!--        android:layout_marginRight="12dp"-->
+                    <!--        tools:checked="true" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/container_avatar3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/image_dialog_icon3"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerInside"
+                            android:background="#007766"/>
+
+                        <TextView
+                            android:id="@+id/text_dialog_avatar_title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="2dp"
+                            android:textColor="#fff"
+                            android:textSize="17sp"
+                            android:textStyle="normal"
+                            android:text="E" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_dialog_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_toRightOf="@+id/container_avatar3"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="BitCoin" />
+
+                    <TextView
+                        android:id="@+id/text_dialog_last_message3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_dialog_name3"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toRightOf="@+id/container_avatar3"
+                        android:ellipsize="end"
+                        android:paddingBottom="2dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:text="BTC" />
+
+                    <ImageView
+                        android:id="@+id/graph3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/text_last_msg_time3"
+                        android:gravity="center"
+                        android:src="@drawable/ic_pie_graph" />
+
+                    <TextView
+                        android:id="@+id/text_last_msg_time3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="R$60.927,21" />
+
+                    <TextView
+                        android:id="@+id/text_unread_counter3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_last_msg_time3"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="#008000"
+                        android:text="+2,69%"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C0C0C0"
+                    />
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <!--    <CheckBox-->
+                    <!--        android:id="@+id/checkbox_dialogs"-->
+                    <!--        android:layout_width="wrap_content"-->
+                    <!--        android:layout_height="wrap_content"-->
+                    <!--        android:layout_alignParentRight="true"-->
+                    <!--        android:visibility="visible"-->
+                    <!--        android:clickable="false"-->
+                    <!--        android:focusable="false"-->
+                    <!--        android:focusableInTouchMode="false"-->
+                    <!--        android:layout_centerInParent="true"-->
+                    <!--        android:layout_marginRight="12dp"-->
+                    <!--        tools:checked="true" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/container_avatar4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/image_dialog_icon4"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerInside"
+                            android:background="#007766"/>
+
+                        <TextView
+                            android:id="@+id/text_dialog_avatar_title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="2dp"
+                            android:textColor="#fff"
+                            android:textSize="17sp"
+                            android:textStyle="normal"
+                            android:text="E" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_dialog_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_toRightOf="@+id/container_avatar4"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="BitCoin" />
+
+                    <TextView
+                        android:id="@+id/text_dialog_last_message4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_dialog_name4"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toRightOf="@+id/container_avatar4"
+                        android:ellipsize="end"
+                        android:paddingBottom="2dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:text="BTC" />
+
+                    <ImageView
+                        android:id="@+id/graph4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/text_last_msg_time4"
+                        android:gravity="center"
+                        android:src="@drawable/ic_pie_graph" />
+
+                    <TextView
+                        android:id="@+id/text_last_msg_time4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="R$60.927,21" />
+
+                    <TextView
+                        android:id="@+id/text_unread_counter4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_last_msg_time4"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="#008000"
+                        android:text="+2,69%"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C0C0C0"
+                    />
+
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <!--    <CheckBox-->
+                    <!--        android:id="@+id/checkbox_dialogs"-->
+                    <!--        android:layout_width="wrap_content"-->
+                    <!--        android:layout_height="wrap_content"-->
+                    <!--        android:layout_alignParentRight="true"-->
+                    <!--        android:visibility="visible"-->
+                    <!--        android:clickable="false"-->
+                    <!--        android:focusable="false"-->
+                    <!--        android:focusableInTouchMode="false"-->
+                    <!--        android:layout_centerInParent="true"-->
+                    <!--        android:layout_marginRight="12dp"-->
+                    <!--        tools:checked="true" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/container_avatar5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/image_dialog_icon5"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerInside"
+                            android:background="#007766"/>
+
+                        <TextView
+                            android:id="@+id/text_dialog_avatar_title5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="2dp"
+                            android:textColor="#fff"
+                            android:textSize="17sp"
+                            android:textStyle="normal"
+                            android:text="E" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_dialog_name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_toRightOf="@+id/container_avatar5"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="BitCoin" />
+
+                    <TextView
+                        android:id="@+id/text_dialog_last_message5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_dialog_name5"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toRightOf="@+id/container_avatar5"
+                        android:ellipsize="end"
+                        android:paddingBottom="2dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:text="BTC" />
+
+                    <ImageView
+                        android:id="@+id/graph5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/text_last_msg_time5"
+                        android:gravity="center"
+                        android:src="@drawable/ic_pie_graph" />
+
+                    <TextView
+                        android:id="@+id/text_last_msg_time5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:text="R$60.927,21" />
+
+                    <TextView
+                        android:id="@+id/text_unread_counter5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_last_msg_time5"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="#008000"
+                        android:text="+2,69%"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C0C0C0"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
 
 
 </FrameLayout>

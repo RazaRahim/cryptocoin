@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cross"
+        android:id="@+id/cross"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="First Name"
+        android:textColorHint="@color/grey"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edtback"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Last Name"
+        android:textColorHint="@color/grey"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edtback"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Email address"
+        android:textColorHint="@color/grey"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edtback"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/pass"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Minimum 8 characters"
+        android:textColorHint="@color/grey"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edtback"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/eye"
+        android:paddingRight="7dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="90dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I certify that i am 18 years of age or older, and i agree to the User Agreement  and Privacy policy"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center|bottom"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"
+        android:layout_height="0dp">
+        <!--    <Button-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_weight="0"-->
+        <!--        android:layout_marginLeft="30dp"-->
+        <!--        android:layout_gravity="bottom"-->
+        <!--        android:layout_marginRight="30dp"-->
+        <!--        android:text="Start"-->
+        <!--        android:textColor="@color/white"-->
+        <!--        android:id="@+id/btn"-->
+        <!--        android:background="@drawable/edtback"-->
+        <!--        />-->
+
+        <com.kusu.loadingbutton.LoadingButton
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_weight="0"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Start"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            app:lb_buttonColor="@color/btn"
+            app:lb_loaderColor="@color/btn"
+            app:lb_shadowColor="@color/btn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

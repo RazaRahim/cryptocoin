@@ -1,0 +1,876 @@
+Index: app/src/main/res/menu/bottom_navigation.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<menu xmlns:android=\"http://schemas.android.com/apk/res/android\">\r\n<item android:id=\"@+id/chat\"\r\n    android:title=\"Home\"\r\n    android:enabled=\"true\"\r\n    android:icon=\"@drawable/ic_home\">\r\n</item>\r\n\r\n    <item android:id=\"@+id/contacts\"\r\n        android:title=\"Dashboard\"\r\n        android:icon=\"@drawable/ic_pie_graph\">\r\n    </item>\r\n\r\n\r\n\r\n    <item android:id=\"@+id/calls\"\r\n        android:title=\"\"\r\n        android:icon=\"@drawable/ic_arrows\">\r\n    </item>\r\n\r\n    <item android:id=\"@+id/setting\"\r\n        android:title=\"Price\"\r\n        android:icon=\"@drawable/ic_signal\">\r\n    </item>\r\n\r\n    <item android:id=\"@+id/config\"\r\n        android:title=\"Configuration\"\r\n        android:icon=\"@drawable/ic_person\">\r\n    </item>\r\n</menu>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/menu/bottom_navigation.xml	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ app/src/main/res/menu/bottom_navigation.xml	(date 1602844954870)
+@@ -15,7 +15,7 @@
+ 
+     <item android:id="@+id/calls"
+         android:title=""
+-        android:icon="@drawable/ic_arrows">
++        android:icon="@drawable/arros">
+     </item>
+ 
+     <item android:id="@+id/setting"
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"1.8\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ .idea/gradle.xml	(date 1602834575574)
+@@ -15,6 +15,7 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<resources>\r\n    <color name=\"colorPrimary\">#6200EE</color>\r\n    <color name=\"colorPrimaryDark\">#3700B3</color>\r\n    <color name=\"colorAccent\">#03DAC5</color>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/colors.xml	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ app/src/main/res/values/colors.xml	(date 1602835874708)
+@@ -1,6 +1,14 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+-    <color name="colorPrimary">#6200EE</color>
+-    <color name="colorPrimaryDark">#3700B3</color>
+-    <color name="colorAccent">#03DAC5</color>
++    <color name="colorPrimary">#1652F0</color>
++    <color name="colorPrimaryDark">#1652F0</color>
++    <color name="colorAccent">#1652F0</color>
++
++
++    <color name="black">#FF000000</color>
++    <color name="grey">#7C7C7C</color>
++    <color name="btn">#9CA1AA</color>
++    <color name="white">#FFFFFFFF</color>
++    <color name="blue">#1652F0</color>
++
+ </resources>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ .idea/vcs.xml	(date 1602834575587)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_7\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ .idea/misc.xml	(date 1602834575602)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: app/src/main/res/values/styles.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <!-- Base application theme. -->\r\n    <style name=\"AppTheme\" parent=\"Theme.AppCompat.Light.DarkActionBar\">\r\n        <!-- Customize your theme here. -->\r\n        <item name=\"colorPrimary\">@color/colorPrimary</item>\r\n        <item name=\"colorPrimaryDark\">@color/colorPrimaryDark</item>\r\n        <item name=\"colorAccent\">@color/colorAccent</item>\r\n    </style>\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/styles.xml	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ app/src/main/res/values/styles.xml	(date 1602834723306)
+@@ -1,6 +1,6 @@
+ <resources>
+     <!-- Base application theme. -->
+-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
++    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+         <!-- Customize your theme here. -->
+         <item name="colorPrimary">@color/colorPrimary</item>
+         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>apply plugin: 'com.android.application'\r\n\r\nandroid {\r\n    compileSdkVersion 30\r\n    buildToolsVersion \"30.0.0\"\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.cryptocoin\"\r\n        minSdkVersion 16\r\n        targetSdkVersion 30\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n}\r\n\r\ndependencies {\r\n    implementation fileTree(dir: \"libs\", include: [\"*.jar\"])\r\n    implementation 'androidx.appcompat:appcompat:1.2.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'\r\n    testImplementation 'junit:junit:4.12'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.2'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'\r\n    implementation 'com.google.android.material:material:1.2.0-alpha04'\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ app/build.gradle	(date 1602836013970)
+@@ -6,7 +6,7 @@
+ 
+     defaultConfig {
+         applicationId "com.example.cryptocoin"
+-        minSdkVersion 16
++        minSdkVersion 21
+         targetSdkVersion 30
+         versionCode 1
+         versionName "1.0"
+@@ -31,4 +31,6 @@
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+     implementation 'com.google.android.material:material:1.2.0-alpha04'
+ 
++    implementation 'com.github.koushikcse:LoadingButton:1.7'
++
+ }
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n    dependencies {\r\n        classpath \"com.android.tools.build:gradle:4.0.1\"\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\nallprojects {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ build.gradle	(date 1602835155067)
+@@ -3,6 +3,7 @@
+     repositories {
+         google()
+         jcenter()
++        maven { url "https://jitpack.io" }
+     }
+     dependencies {
+         classpath "com.android.tools.build:gradle:4.0.1"
+@@ -16,6 +17,7 @@
+     repositories {
+         google()
+         jcenter()
++        maven { url "https://jitpack.io" }
+     }
+ }
+ 
+Index: app/src/main/java/com/example/cryptocoin/Signup.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/cryptocoin/Signup.java	(date 1602843014455)
++++ app/src/main/java/com/example/cryptocoin/Signup.java	(date 1602843014455)
+@@ -0,0 +1,34 @@
++package com.example.cryptocoin;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.view.View;
++import android.widget.Button;
++import android.widget.EditText;
++import android.widget.ImageView;
++import android.widget.TextView;
++
++public class Signup extends AppCompatActivity {
++
++    EditText pass;
++    ImageView cross;
++    Button btn;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_signup);
++        pass=findViewById(R.id.pass);
++        cross=findViewById(R.id.cross);
++        btn=findViewById(R.id.btn);
++
++        cross.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                finish();
++            }
++        });
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_signup.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_signup.xml	(date 1602843694558)
++++ app/src/main/res/layout/activity_signup.xml	(date 1602843694558)
+@@ -0,0 +1,192 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/white"
++    android:orientation="vertical"
++    tools:context=".Signup">
++
++    <ImageView
++        android:layout_width="20dp"
++        android:layout_height="20dp"
++        android:layout_marginLeft="10dp"
++        android:layout_marginTop="10dp"
++        android:src="@drawable/cross"
++        android:id="@+id/cross"
++        />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Create Your Account"
++        android:layout_margin="20dp"
++        android:textColor="@color/black"
++        android:textSize="22dp"
++        android:textStyle="bold"
++        />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="First Name"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:textColor="@color/black"
++        android:layout_marginTop="5dp"
++        android:textSize="15dp"
++        />
++    <EditText
++        android:layout_width="match_parent"
++        android:layout_height="35dp"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:hint="First Name"
++        android:textColorHint="@color/grey"
++        android:paddingLeft="10dp"
++        android:layout_marginTop="5dp"
++        android:textColor="@color/black"
++        android:background="@drawable/edtback"
++        android:inputType="text"
++        />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Last Name"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:textColor="@color/black"
++        android:layout_marginTop="10dp"
++        android:textSize="15dp"
++        />
++    <EditText
++        android:layout_width="match_parent"
++        android:layout_height="35dp"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:hint="Last Name"
++        android:textColorHint="@color/grey"
++        android:paddingLeft="10dp"
++        android:layout_marginTop="5dp"
++        android:textColor="@color/black"
++        android:background="@drawable/edtback"
++        android:inputType="text"
++        />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Email"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:textColor="@color/black"
++        android:layout_marginTop="10dp"
++        android:textSize="15dp"
++        />
++    <EditText
++        android:layout_width="match_parent"
++        android:layout_height="35dp"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:hint="Email address"
++        android:textColorHint="@color/grey"
++        android:paddingLeft="10dp"
++        android:layout_marginTop="5dp"
++        android:textColor="@color/black"
++        android:background="@drawable/edtback"
++        android:inputType="textEmailAddress"
++        />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Password"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:textColor="@color/black"
++        android:layout_marginTop="10dp"
++        android:textSize="15dp"
++        />
++    <EditText
++        android:layout_width="match_parent"
++        android:id="@+id/pass"
++        android:layout_height="35dp"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:hint="Minimum 8 characters"
++        android:textColorHint="@color/grey"
++        android:paddingLeft="10dp"
++        android:layout_marginTop="5dp"
++        android:textColor="@color/black"
++        android:background="@drawable/edtback"
++        android:inputType="textPassword"
++        android:drawableRight="@drawable/eye"
++        android:paddingRight="7dp"
++        />
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:orientation="horizontal"
++        android:layout_height="90dp">
++
++        <CheckBox
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="10dp"
++            android:checked="true"
++            android:layout_marginLeft="15dp"
++            />
++
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:text="I certify that i am 18 years of age or older, and i agree to the User Agreement  and Privacy policy"
++            android:layout_marginRight="20dp"
++            android:textColor="@color/black"
++            android:layout_marginTop="10dp"
++            android:textSize="16dp"
++            />
++
++    </LinearLayout>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_gravity="center|bottom"
++        android:layout_weight="1"
++        android:layout_marginBottom="15dp"
++        android:layout_height="0dp">
++        <!--    <Button-->
++        <!--        android:layout_width="match_parent"-->
++        <!--        android:layout_height="wrap_content"-->
++        <!--        android:layout_weight="0"-->
++        <!--        android:layout_marginLeft="30dp"-->
++        <!--        android:layout_gravity="bottom"-->
++        <!--        android:layout_marginRight="30dp"-->
++        <!--        android:text="Start"-->
++        <!--        android:textColor="@color/white"-->
++        <!--        android:id="@+id/btn"-->
++        <!--        android:background="@drawable/edtback"-->
++        <!--        />-->
++
++        <com.kusu.loadingbutton.LoadingButton
++            android:id="@+id/btn"
++            android:layout_width="match_parent"
++            android:layout_weight="0"
++            android:layout_height="wrap_content"
++            android:layout_centerHorizontal="true"
++            android:text="Start"
++            android:layout_gravity="bottom"
++            android:textColor="@color/white"
++            app:lb_buttonColor="@color/btn"
++            app:lb_loaderColor="@color/btn"
++            app:lb_shadowColor="@color/btn"
++            android:layout_marginLeft="30dp"
++            android:layout_marginRight="30dp"
++            android:paddingBottom="5dp"
++            />
++
++    </LinearLayout>
++
++</LinearLayout>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.cryptocoin\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/AppTheme\">\r\n        <activity android:name=\".MainActivity\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ app/src/main/AndroidManifest.xml	(date 1602838257176)
+@@ -9,7 +9,10 @@
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
+-        <activity android:name=".MainActivity">
++        <activity android:name=".MainActivity"></activity>
++        <activity android:name=".Login" />
++        <activity android:name=".Signup" />
++        <activity android:name=".Splash">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+ 
+Index: app/src/main/java/com/example/cryptocoin/Splash.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/cryptocoin/Splash.java	(date 1602838284528)
++++ app/src/main/java/com/example/cryptocoin/Splash.java	(date 1602838284528)
+@@ -0,0 +1,26 @@
++package com.example.cryptocoin;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.os.Handler;
++
++public class Splash extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_splash);
++
++        new Handler().postDelayed(new Runnable(){
++            @Override
++            public void run() {
++                /* Create an Intent that will start the Menu-Activity. */
++                Intent mainIntent = new Intent(Splash.this,Login.class);
++                Splash.this.startActivity(mainIntent);
++                Splash.this.finish();
++            }
++        }, 3000);
++    }
++}
+\ No newline at end of file
+Index: .idea/markdown-navigator-enh.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/markdown-navigator-enh.xml	(date 1602834575626)
++++ .idea/markdown-navigator-enh.xml	(date 1602834575626)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="MarkdownEnhProjectSettings">
++    <AnnotatorSettings targetHasSpaces="true" linkCaseMismatch="true" wikiCaseMismatch="true" wikiLinkHasDashes="true" notUnderWikiHome="true" targetNotWikiPageExt="true" notUnderSourceWikiHome="true" targetNameHasAnchor="true" targetPathHasAnchor="true" wikiLinkHasSlash="true" wikiLinkHasSubdir="true" wikiLinkHasOnlyAnchor="true" linkTargetsWikiHasExt="true" linkTargetsWikiHasBadExt="true" notUnderSameRepo="true" targetNotUnderVcs="false" linkNeedsExt="true" linkHasBadExt="true" linkTargetNeedsExt="true" linkTargetHasBadExt="true" wikiLinkNotInWiki="true" imageTargetNotInRaw="true" repoRelativeAcrossVcsRoots="true" multipleWikiTargetsMatch="true" unresolvedLinkReference="true" linkIsIgnored="true" anchorIsIgnored="true" anchorIsUnresolved="true" anchorLineReferenceIsUnresolved="true" anchorLineReferenceFormat="true" anchorHasDuplicates="true" abbreviationDuplicates="true" abbreviationNotUsed="true" attributeIdDuplicateDefinition="true" attributeIdNotUsed="true" footnoteDuplicateDefinition="true" footnoteUnresolved="true" footnoteDuplicates="true" footnoteNotUsed="true" macroDuplicateDefinition="true" macroUnresolved="true" macroDuplicates="true" macroNotUsed="true" referenceDuplicateDefinition="true" referenceUnresolved="true" referenceDuplicates="true" referenceNotUsed="true" referenceUnresolvedNumericId="true" enumRefDuplicateDefinition="true" enumRefUnresolved="true" enumRefDuplicates="true" enumRefNotUsed="true" enumRefLinkUnresolved="true" enumRefLinkDuplicates="true" simTocUpdateNeeded="true" simTocTitleSpaceNeeded="true" />
++    <HtmlExportSettings updateOnSave="false" parentDir="" targetDir="" cssDir="css" scriptDir="js" plainHtml="false" imageDir="" copyLinkedImages="false" imagePathType="0" targetPathType="2" targetExt="" useTargetExt="false" noCssNoScripts="false" useElementStyleAttribute="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
++    <LinkMapSettings>
++      <textMaps />
++    </LinkMapSettings>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1602834575615)
++++ .idea/compiler.xml	(date 1602834575615)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="1.8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_splash.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_splash.xml	(date 1602835742779)
++++ app/src/main/res/layout/activity_splash.xml	(date 1602835742779)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++
++    android:background="#1652F0"
++    tools:context=".Splash">
++
++    <ImageView
++        android:layout_width="300dp"
++        android:layout_height="300dp"
++        android:layout_centerInParent="true"
++        android:src="@drawable/splash"
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/cryptocoin/Login.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/cryptocoin/Login.java	(date 1602843871725)
++++ app/src/main/java/com/example/cryptocoin/Login.java	(date 1602843871725)
+@@ -0,0 +1,51 @@
++package com.example.cryptocoin;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.view.View;
++import android.widget.ImageView;
++import android.widget.TextView;
++
++import com.kusu.loadingbutton.LoadingButton;
++
++public class Login extends AppCompatActivity {
++    ImageView cross;
++    TextView signup;
++    LoadingButton btn;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_login);
++        cross=findViewById(R.id.cross);
++        btn=findViewById(R.id.btn);
++
++
++        signup=findViewById(R.id.signup);
++
++        signup.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                Intent intent = new Intent(Login.this, Signup.class);
++                startActivity(intent);
++            }
++        });
++
++        btn.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                Intent intent = new Intent(Login.this, MainActivity.class);
++                startActivity(intent);
++            }
++        });
++
++        cross.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                finish();
++            }
++        });
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_login.xml	(date 1602843694544)
++++ app/src/main/res/layout/activity_login.xml	(date 1602843694544)
+@@ -0,0 +1,204 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical"
++    android:background="@color/white"
++    tools:context=".Login">
++
++    <ImageView
++        android:layout_width="20dp"
++        android:layout_height="20dp"
++        android:layout_marginLeft="10dp"
++        android:layout_marginTop="10dp"
++        android:src="@drawable/cross"
++        android:id="@+id/cross"
++        />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Sign in to Coinbase"
++        android:layout_margin="20dp"
++        android:textColor="@color/black"
++        android:textSize="22dp"
++        android:textStyle="bold"
++        />
++
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Email"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:textColor="@color/black"
++        android:layout_marginTop="10dp"
++        android:textSize="15dp"
++        />
++    <EditText
++        android:layout_width="match_parent"
++        android:layout_height="35dp"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:hint="Email address"
++        android:textColorHint="@color/grey"
++        android:paddingLeft="10dp"
++        android:layout_marginTop="5dp"
++        android:textColor="@color/black"
++        android:background="@drawable/edtback"
++        android:inputType="textEmailAddress"
++        />
++
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Password"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:textColor="@color/black"
++        android:layout_marginTop="10dp"
++        android:textSize="15dp"
++        />
++    <EditText
++        android:layout_width="match_parent"
++        android:id="@+id/pass"
++        android:layout_height="35dp"
++        android:layout_marginLeft="15dp"
++        android:layout_marginRight="15dp"
++        android:hint="Password"
++        android:textColorHint="@color/grey"
++        android:paddingLeft="10dp"
++        android:layout_marginTop="5dp"
++        android:textColor="@color/black"
++        android:background="@drawable/edtback"
++        android:inputType="textPassword"
++        android:drawableRight="@drawable/eye"
++        android:paddingRight="7dp"
++        />
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:orientation="horizontal"
++        android:weightSum="2"
++        android:layout_height="wrap_content">
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:orientation="horizontal"
++            android:layout_weight="1"
++            android:layout_height="wrap_content">
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Forget password"
++                android:layout_marginRight="20dp"
++                android:textColor="@color/blue"
++                android:layout_marginTop="15dp"
++                android:layout_marginLeft="15dp"
++                android:textSize="14dp"
++                />
++        </LinearLayout>
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:orientation="horizontal"
++            android:layout_weight="1"
++            android:layout_gravity="right"
++            android:gravity="right"
++            android:layout_height="wrap_content">
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Privacy Policy"
++                android:layout_marginRight="20dp"
++                android:textColor="@color/blue"
++                android:layout_marginTop="15dp"
++                android:layout_marginLeft="15dp"
++                android:textSize="14dp"
++                />
++        </LinearLayout>
++
++
++    </LinearLayout>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:orientation="horizontal"
++        android:weightSum="2"
++        android:layout_height="wrap_content">
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:orientation="horizontal"
++            android:layout_weight="1"
++            android:layout_height="wrap_content">
++
++        </LinearLayout>
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:orientation="horizontal"
++            android:layout_weight="1"
++            android:layout_gravity="right"
++            android:gravity="right"
++            android:layout_height="wrap_content">
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:textAlignment="viewEnd"
++                android:text="Don't have account?\nSign up now!"
++                android:layout_marginRight="20dp"
++                android:textColor="@color/blue"
++                android:layout_marginTop="15dp"
++                android:layout_marginLeft="15dp"
++                android:textSize="14dp"
++                android:id="@+id/signup"
++                />
++        </LinearLayout>
++
++
++    </LinearLayout>
++
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_gravity="center|bottom"
++        android:layout_weight="1"
++        android:layout_marginBottom="15dp"
++        android:layout_height="0dp">
++
++        <!--    <Button-->
++        <!--        android:layout_width="match_parent"-->
++        <!--        android:layout_height="wrap_content"-->
++        <!--        android:layout_weight="0"-->
++        <!--        android:layout_marginLeft="30dp"-->
++        <!--        android:layout_gravity="bottom"-->
++        <!--        android:layout_marginRight="30dp"-->
++        <!--        android:text="Start"-->
++        <!--        android:textColor="@color/white"-->
++        <!--        android:id="@+id/btn"-->
++        <!--        android:background="@drawable/edtback"-->
++        <!--        />-->
++
++        <com.kusu.loadingbutton.LoadingButton
++            android:id="@+id/btn"
++            android:layout_width="match_parent"
++            android:layout_weight="0"
++            android:layout_height="wrap_content"
++            android:layout_centerHorizontal="true"
++            android:text="Sign in"
++            android:layout_gravity="bottom"
++            android:textColor="@color/white"
++            app:lb_buttonColor="@color/btn"
++            app:lb_loaderColor="@color/btn"
++            app:lb_shadowColor="@color/btn"
++            android:layout_marginLeft="30dp"
++            android:layout_marginRight="30dp"
++            />
++
++    </LinearLayout>
++
++</LinearLayout>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"RemoteRepositoriesConfiguration\">\r\n    <remote-repository>\r\n      <option name=\"id\" value=\"central\" />\r\n      <option name=\"name\" value=\"Maven Central repository\" />\r\n      <option name=\"url\" value=\"https://repo1.maven.org/maven2\" />\r\n    </remote-repository>\r\n    <remote-repository>\r\n      <option name=\"id\" value=\"jboss.community\" />\r\n      <option name=\"name\" value=\"JBoss Community repository\" />\r\n      <option name=\"url\" value=\"https://repository.jboss.org/nexus/content/repositories/public/\" />\r\n    </remote-repository>\r\n    <remote-repository>\r\n      <option name=\"id\" value=\"BintrayJCenter\" />\r\n      <option name=\"name\" value=\"BintrayJCenter\" />\r\n      <option name=\"url\" value=\"https://jcenter.bintray.com/\" />\r\n    </remote-repository>\r\n    <remote-repository>\r\n      <option name=\"id\" value=\"Google\" />\r\n      <option name=\"name\" value=\"Google\" />\r\n      <option name=\"url\" value=\"https://dl.google.com/dl/android/maven2/\" />\r\n    </remote-repository>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/jarRepositories.xml	(revision 24e877763409a6179dc37304a40084d2be17810b)
++++ .idea/jarRepositories.xml	(date 1602835167555)
+@@ -21,5 +21,10 @@
+       <option name="name" value="Google" />
+       <option name="url" value="https://dl.google.com/dl/android/maven2/" />
+     </remote-repository>
++    <remote-repository>
++      <option name="id" value="maven" />
++      <option name="name" value="maven" />
++      <option name="url" value="https://jitpack.io" />
++    </remote-repository>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/markdown-navigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/markdown-navigator.xml	(date 1602834575636)
++++ .idea/markdown-navigator.xml	(date 1602834575636)
+@@ -0,0 +1,46 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="MarkdownProjectSettings">
++    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" synchronizePreviewPosition="true" highlightPreviewType="LINE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="true" showSelectionInPreview="true" lastLayoutSetsDefault="false">
++      <PanelProvider>
++        <provider providerId="com.vladsch.md.nav.editor.swing.html.panel" providerName="Default - Swing" />
++      </PanelProvider>
++    </PreviewSettings>
++    <ParserSettings gitHubSyntaxChange="false" correctedInvalidSettings="false" emojiShortcuts="1" emojiImages="0">
++      <PegdownExtensions>
++        <option name="ATXHEADERSPACE" value="true" />
++        <option name="FENCED_CODE_BLOCKS" value="true" />
++        <option name="INTELLIJ_DUMMY_IDENTIFIER" value="true" />
++        <option name="RELAXEDHRULES" value="true" />
++        <option name="STRIKETHROUGH" value="true" />
++        <option name="TABLES" value="true" />
++        <option name="TASKLISTITEMS" value="true" />
++      </PegdownExtensions>
++      <ParserOptions>
++        <option name="COMMONMARK_LISTS" value="true" />
++        <option name="EMOJI_SHORTCUTS" value="true" />
++        <option name="GFM_TABLE_RENDERING" value="true" />
++        <option name="PRODUCTION_SPEC_PARSER" value="true" />
++        <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
++      </ParserOptions>
++    </ParserSettings>
++    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" addPageHeader="false" addAnchorLinks="true" anchorLinksWrapText="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" defaultUrlTitle="false" migratedPlantUml="false" migratedAnchorLinks="false" plantUmlConversion="0">
++      <GeneratorProvider>
++        <provider providerId="com.vladsch.md.nav.editor.text.html.generator" providerName="Unmodified HTML Generator" />
++      </GeneratorProvider>
++      <headerTop />
++      <headerBottom />
++      <bodyTop />
++      <bodyBottom />
++      <fencedCodeConversions />
++    </HtmlSettings>
++    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
++      <StylesheetProvider>
++        <provider providerId="com.vladsch.md.nav.editor.text.html.css" providerName="No Stylesheet" />
++      </StylesheetProvider>
++      <ScriptProviders />
++      <cssText />
++      <cssUriHistory />
++    </CssSettings>
++  </component>
++</project>
+\ No newline at end of file

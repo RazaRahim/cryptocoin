@@ -17,9 +17,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="#fff"
+        app:itemBackground="@color/colorPrimary"
         app:itemIconTint="#ffff"
         app:itemTextColor="#000"
-        app:menu="@menu/bottom_navigation"/>
+        app:menu="@menu/bottom_navigation">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="1dp"
+            app:layout_anchor="@id/fragment_container"
+            android:src="@drawable/ic_arrows"
+            app:layout_anchorGravity="bottom|right"
+            android:backgroundTint="#0D5BE1" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </RelativeLayout>

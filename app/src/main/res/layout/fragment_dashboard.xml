@@ -8,6 +8,18 @@ android:orientation="vertical"
 tools:context=".dashboard"
     >
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favoutite"
+        android:layout_marginTop="11dp"
+
+        android:layout_marginLeft="27dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
 <RelativeLayout
     android:gravity="center_vertical"
     android:paddingTop="5dp"
@@ -62,7 +74,8 @@ tools:context=".dashboard"
             android:textColor="#fff"
             android:textSize="17sp"
             android:textStyle="normal"
-            android:text="E" />
+            android:text="$"
+            />
     </RelativeLayout>
 
     <TextView
@@ -93,15 +106,7 @@ tools:context=".dashboard"
         android:textSize="14sp"
         android:text="BTC" />
 
-    <ImageView
-        android:id="@+id/graph"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_toLeftOf="@+id/text_last_msg_time"
-        android:gravity="center"
-        android:src="@drawable/ic_pie_graph" />
+
 
     <TextView
         android:id="@+id/text_last_msg_time"
@@ -140,6 +145,572 @@ tools:context=".dashboard"
     android:layout_height="1dp"
     android:background="#C0C0C0"
     />
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/checkbox_dialogs"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:visibility="visible"-->
+        <!--        android:clickable="false"-->
+        <!--        android:focusable="false"-->
+        <!--        android:focusableInTouchMode="false"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:layout_marginRight="12dp"-->
+        <!--        tools:checked="true" />-->
+
+        <RelativeLayout
+            android:id="@+id/container_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            tools:ignore="DuplicateIds">
+
+            <ImageView
+                android:id="@+id/image_dialog_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="#007766"/>
+
+            <TextView
+                android:id="@+id/text_dialog_avatar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="2dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:text="E" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="9dp"
+            android:layout_toRightOf="@+id/container_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="BitCoin"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_dialog_last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_dialog_name"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@+id/container_avatar"
+            android:ellipsize="end"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="BTC"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/text_last_msg_time"
+            android:gravity="center"
+            android:src="@drawable/ic_pie_graph"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_last_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="R$60.927,21"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_unread_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_last_msg_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="#008000"
+            android:text="+2,69%"
+            android:textSize="14sp"
+            tools:ignore="DuplicateIds" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"
+        />
+
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/checkbox_dialogs"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:visibility="visible"-->
+        <!--        android:clickable="false"-->
+        <!--        android:focusable="false"-->
+        <!--        android:focusableInTouchMode="false"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:layout_marginRight="12dp"-->
+        <!--        tools:checked="true" />-->
+
+        <RelativeLayout
+            android:id="@+id/container_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            tools:ignore="DuplicateIds">
+
+            <ImageView
+                android:id="@+id/image_dialog_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="#007766"/>
+
+            <TextView
+                android:id="@+id/text_dialog_avatar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="2dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:text="E" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="9dp"
+            android:layout_toRightOf="@+id/container_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="BitCoin"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_dialog_last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_dialog_name"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@+id/container_avatar"
+            android:ellipsize="end"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="BTC"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/text_last_msg_time"
+            android:gravity="center"
+            android:src="@drawable/ic_pie_graph"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_last_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="R$60.927,21"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_unread_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_last_msg_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="#008000"
+            android:text="+2,69%"
+            android:textSize="14sp"
+            tools:ignore="DuplicateIds" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"
+        />
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/checkbox_dialogs"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:visibility="visible"-->
+        <!--        android:clickable="false"-->
+        <!--        android:focusable="false"-->
+        <!--        android:focusableInTouchMode="false"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:layout_marginRight="12dp"-->
+        <!--        tools:checked="true" />-->
+
+        <RelativeLayout
+            android:id="@+id/container_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            tools:ignore="DuplicateIds">
+
+            <ImageView
+                android:id="@+id/image_dialog_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="#007766"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/text_dialog_avatar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="2dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:text="E" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="9dp"
+            android:layout_toRightOf="@+id/container_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="BitCoin"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_dialog_last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_dialog_name"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@+id/container_avatar"
+            android:ellipsize="end"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="BTC"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/text_last_msg_time"
+            android:gravity="center"
+            android:src="@drawable/ic_pie_graph"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_last_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="R$60.927,21"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_unread_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_last_msg_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="#008000"
+            android:text="+2,69%"
+            android:textSize="14sp"
+            tools:ignore="DuplicateIds" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"
+        />
+
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/checkbox_dialogs"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:visibility="visible"-->
+        <!--        android:clickable="false"-->
+        <!--        android:focusable="false"-->
+        <!--        android:focusableInTouchMode="false"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:layout_marginRight="12dp"-->
+        <!--        tools:checked="true" />-->
+
+        <RelativeLayout
+            android:id="@+id/container_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            tools:ignore="DuplicateIds">
+
+            <ImageView
+                android:id="@+id/image_dialog_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="#007766"/>
+
+            <TextView
+                android:id="@+id/text_dialog_avatar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="2dp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:text="E" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="9dp"
+            android:layout_toRightOf="@+id/container_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="BitCoin"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_dialog_last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_dialog_name"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@+id/container_avatar"
+            android:ellipsize="end"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="BTC"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/text_last_msg_time"
+            android:gravity="center"
+            android:src="@drawable/ic_pie_graph"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_last_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="R$60.927,21"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/text_unread_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_last_msg_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="#008000"
+            android:text="+2,69%"
+            android:textSize="14sp"
+            tools:ignore="DuplicateIds" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"
+        />
+
+
+
+
 
 
 

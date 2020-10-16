@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/chat"
+<item android:id="@+id/home"
     android:title="Home"
     android:enabled="true"
     android:icon="@drawable/ic_home">
 </item>
 
-    <item android:id="@+id/contacts"
+    <item android:id="@+id/dashboard"
         android:title="Dashboard"
         android:icon="@drawable/ic_pie_graph">
     </item>
 
 
 
-    <item android:id="@+id/calls"
+    <item android:id="@+id/arrow"
         android:title=""
         android:icon="@drawable/ic_arrows">
     </item>
 
-    <item android:id="@+id/setting"
+    <item android:id="@+id/price"
         android:title="Price"
         android:icon="@drawable/ic_signal">
     </item>

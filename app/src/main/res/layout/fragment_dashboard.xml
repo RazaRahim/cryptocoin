@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/root"
 android:layout_width="match_parent"
-android:layout_height="wrap_content"
+android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".dashboard"
     >
@@ -12,9 +12,8 @@ tools:context=".dashboard"
     android:gravity="center_vertical"
     android:paddingTop="5dp"
     android:paddingBottom="5dp"
-    android:paddingLeft="2dp"
-    android:paddingRight="5dp"
-    tools:ignore="RtlHardcoded"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
@@ -52,9 +51,7 @@ tools:context=".dashboard"
             android:layout_height="45dp"
             android:layout_centerInParent="true"
             android:scaleType="centerInside"
-            tools:ignore="ContentDescription"
-
-            tools:src="@color/colorPrimary" />
+            android:background="#007766"/>
 
         <TextView
             android:id="@+id/text_dialog_avatar_title"
@@ -65,23 +62,21 @@ tools:context=".dashboard"
             android:textColor="#fff"
             android:textSize="17sp"
             android:textStyle="normal"
-            tools:text="E" />
+            android:text="E" />
     </RelativeLayout>
 
     <TextView
         android:id="@+id/text_dialog_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="8dp"
-        android:layout_marginRight="6dp"
-        android:layout_toLeftOf="@+id/text_last_msg_time"
+        android:layout_marginRight="9dp"
         android:layout_toRightOf="@+id/container_avatar"
         android:ellipsize="end"
         android:singleLine="true"
         android:textColor="#000"
-        android:textSize="16sp"
-        tools:text="BitCoin" />
+        android:textSize="18sp"
+        android:text="BitCoin" />
 
     <TextView
         android:id="@+id/text_dialog_last_message"
@@ -90,14 +85,23 @@ tools:context=".dashboard"
         android:layout_below="@+id/text_dialog_name"
         android:layout_marginTop="3dp"
         android:layout_marginRight="6dp"
-        android:layout_toLeftOf="@+id/text_unread_counter"
         android:layout_toRightOf="@+id/container_avatar"
         android:ellipsize="end"
         android:paddingBottom="2dp"
         android:singleLine="true"
         android:textColor="#000"
         android:textSize="14sp"
-        tools:text="BTC" />
+        android:text="BTC" />
+
+    <ImageView
+        android:id="@+id/graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/text_last_msg_time"
+        android:gravity="center"
+        android:src="@drawable/ic_pie_graph" />
 
     <TextView
         android:id="@+id/text_last_msg_time"
@@ -105,12 +109,12 @@ tools:context=".dashboard"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="11dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
         android:gravity="center"
         android:textColor="#000"
-        android:textSize="12sp"
-        tools:text="17:12" />
+        android:textSize="18sp"
+        android:text="R$60.927,21" />
 
     <TextView
         android:id="@+id/text_unread_counter"
@@ -118,17 +122,15 @@ tools:context=".dashboard"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_last_msg_time"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="6dp"
         android:layout_marginRight="11dp"
         android:layout_marginBottom="6dp"
-        android:background="#000"
         android:gravity="center"
-        android:minWidth="21dp"
         android:paddingLeft="4dp"
         android:paddingRight="4dp"
-        android:textColor="#fff"
-        android:visibility="visible"
-        tools:text="1" />
+        android:textColor="#008000"
+        android:text="+2,69%"
+        android:textSize="14sp"/>
 
 </RelativeLayout>
 

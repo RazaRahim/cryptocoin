@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new dashboard())
+                    .replace(R.id.fragment_container, new home())
                     .commit();
 
         }
@@ -35,19 +35,19 @@ public class MainActivity extends AppCompatActivity {
             Fragment slectedFragment = null;
             switch (item.getItemId()){
                 case R.id.home:
-                   // slectedFragment =new home();
+                    slectedFragment =new home();
                     break;
                 case R.id.dashboard:
                     slectedFragment =new dashboard();
                     break;
                 case R.id.arrow:
-                   // slectedFragment =new arrow();
+                    slectedFragment =new arrow();
                     break;
                 case R.id.price:
-                  //  slectedFragment =new price();
+                    slectedFragment =new price();
                     break;
                 case R.id.config:
-                   // slectedFragment =new config();
+                    slectedFragment =new config();
                     break;
 
             }
